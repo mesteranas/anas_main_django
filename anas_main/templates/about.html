@@ -1,8 +1,11 @@
 {% extends "home.html"%}
-{%block title%}about{%endblock%}
+{% load i18n %}
+{%block title%}
+{%trans "about"%}
+{%endblock%}
 {%block content%}
-<h1>about</h1>
-<p>description:</p>
-<p></p>
-<p>version : 0.1</p>
+<h1>{%trans "about"%}</h1>
+<p>{%trans "description:"%}</p>
+<p>{%trans "no"%}</p>
+<p>{%trans "version :"%}" 0.1</p>
 {%endblock%}

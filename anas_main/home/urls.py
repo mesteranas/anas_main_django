@@ -4,4 +4,5 @@ urlpatterns=[
     path("",views.home_,name="homePage"),
     path("contect/",views.Contect,name="contect"),
     path("about/",views.about,name="about"),
+    path("changeLanguage",views.changeLanguage,name="changeLanguage")
 ]
