@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <head>
-    {% load static%}
 {% load i18n %}
     <title>{% block title %}
         {%trans "home"%}
     {% endblock %} - anas main</title>
 
-    <link rel="stylesheet" href="{% static "css/stile.css" %}">
+    <link rel="stylesheet" href="/en/static/css/stile.css">
     </head>
 <body>
     <header id="header">
@@ -22,8 +21,9 @@
         <li><a href="{%url "about"%}">{%trans "about"%}</a></li>
     </ul>
     </nav>
+    <section id="content"></section>
     {%block content%}
-    <section id="content">
+    
     <h1>{%trans "welcom"%}</h1>
     </section>
     {%endblock%}
@@ -35,6 +35,6 @@
         <p><a href="https://www.paypal.me/AMohammed231">{%trans "donate"%}</a></p>
     <p>&copy; 2024 mesteranas sites</p>
     </footer>
-    <script src="{%static "javascript/script.js"%}"></script>
+    <script src="/en/static/javascript/script.js"></script>
 </body>
 </html>
